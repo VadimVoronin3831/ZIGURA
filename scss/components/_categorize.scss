@@ -1,0 +1,89 @@
+.cat {
+  background: #000;
+}
+.categorize {
+  .grid__categori {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    height: 550px;
+    .divans {
+      grid-column: 2 span;
+      grid-row: 2 span;
+    }
+    .divans_angle {
+      grid-column: 2 span;
+    }
+    .divans::after {
+      content: "";
+      position: absolute;
+      width: 735px;
+      height: 400px;
+      background: url("..//IMG/bigImg/categorize/item1.png"), 50% / cover no-repeat;
+      top: 55px;
+      left: 27px;
+    }
+    .matras::after {
+      content: "";
+      position: absolute;
+      width: 281px;
+      height: 186px;
+      background: url("..//IMG/bigImg/categorize/item2.png"), 50% / cover no-repeat;
+      top: 74px;
+      left: 97px;
+    }
+    .krovat::after {
+      content: "";
+      position: absolute;
+      width: 326px;
+      height: 181px;
+      background: url("..//IMG/bigImg/categorize/item3.png"), 50% / cover no-repeat;
+      top: 70px;
+      left: 41px;
+    }
+    .divans_angle::after {
+      content: "";
+      position: absolute;
+      width: 508px;
+      height: 227px;
+      background: url("..//IMG/bigImg/categorize/item4.png"), 50% / cover no-repeat;
+      top: 30px;
+      left: 268px;
+    }
+    .item {
+      transition: .2s;
+      overflow: hidden;
+      position: relative;
+      background: var(--foundation-purple-light);
+      padding: 30px;
+      color: var(--foundation-blue-darker, #081225);
+      font-family: "Raleway";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 30px;
+      span {
+        margin-left: 16px;
+        color: var(--foundation-purple-normal, #b3adb3);
+        font-family: "Roboto";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+      }
+    }
+    .item:hover {
+      transform: scale(1.01);
+      box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0.02),
+        0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.03), 0px 20px 13px 0px rgba(0, 0, 0, 0.04),
+        0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.04),
+        0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.05);
+    }
+  }
+
+  .title__inner {
+    @include flex-all-sb;
+    margin-bottom: 32px;
+  }
+}

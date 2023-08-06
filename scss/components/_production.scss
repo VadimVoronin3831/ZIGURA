@@ -1,0 +1,66 @@
+.production {
+  padding: 100px 0;
+  .container {
+    @include flex-h-center;
+  }
+  &__left {
+    &_img {
+      width: 358px;
+      min-height: 366px;
+      border-radius: 16px;
+      background: url("../IMG/bigImg/production/left_img.jpg") no-repeat;
+      background-size: cover;
+    }
+    &_title {
+      margin-bottom: 32px;
+      width: 376px;
+    }
+    button {
+      margin-bottom: 70px;
+      svg{
+        margin-left: 15px;
+        path{
+          @include transition;
+        }
+      }
+    }
+    button:hover {
+      svg{
+        path{
+          stroke: #FFF;
+        }
+      }
+    }
+  }
+    &__middle {
+      padding-top: 45px;
+      width: 626px;
+      &_title {
+        width: 161px;
+        margin: 0 0 44px auto;
+      }
+      &_img {
+        width: 626px;
+        min-height: 360px;
+        border-radius: 16px;
+        background: url("../IMG/bigImg/production/middle_img.jpg") no-repeat;
+        background-size: cover;
+      }
+      &_parag {
+        margin: 0;
+        margin-top: 30px;
+      }
+    }
+    &__right {
+      height: 100%;
+      @include flex-all-end;
+      &_img {
+        width: 238px;
+        height: 360px;
+        border-radius: 16px;
+        background: url("../IMG/bigImg/production/right_img.jpg") no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+

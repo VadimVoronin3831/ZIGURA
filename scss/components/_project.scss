@@ -1,0 +1,44 @@
+.project {
+  padding-top: 100px;
+  .swiper-container-proj {
+    overflow: hidden;
+    margin-bottom: 32px;
+  }
+  .item-proj {
+    display: flex;
+    align-items: end;
+    height: 540px;
+    border-radius: 6px;
+    transition: all .2s;
+  }
+  .swiper-slide:hover {
+    transform: scale(0.99);
+    cursor: pointer;
+  }
+  .item-proj-1 {
+    background: url("../IMG/bigImg/project/item1.jpg") no-repeat;
+    background-size: cover;
+  }
+  .item-proj-2 {
+    background: url("../IMG/bigImg/project/item2.jpg") no-repeat;
+    background-size: cover;
+  }
+  .item-proj-3 {
+    background: url("../IMG/bigImg/project/item3.jpg") no-repeat;
+    background-size: cover;
+  }
+  .item__title {
+    margin-left: 30px;
+    margin-bottom: 30px;
+    color: var(--color-white);
+  }
+  .swiper-scrollbar-proj {
+    height: 5px;
+    border-radius: 6px;
+    background: var(--foundation-violet-light, #ebebec) !important;
+    .swiper-scrollbar-drag {
+      border-radius: 6px;
+      background: var(--foundation-violet-normal) !important;
+    }
+  }
+}

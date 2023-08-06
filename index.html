@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="scss/main.css">
+  <link rel="stylesheet" href="scss/swiper-bundle.css">
+  <title>ZIGURA</title>
+</head>
+
+<body>
+  <div class="site-container">
+    <header class="Header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top_inner">
+            <div class="City">
+              <div class="pointSVG">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.398 19.804L12.7434 20.4697H12.7434L12.398 19.804ZM11.602 19.804L11.2566 20.4697H11.2566L11.602 19.804ZM18.25 11C18.25 13.2364 17.111 15.0661 15.7225 16.4666C14.3347 17.8664 12.7605 18.7711 12.0527 19.1382L12.7434 20.4697C13.5185 20.0677 15.2453 19.0785 16.7877 17.5227C18.3295 15.9676 19.75 13.78 19.75 11H18.25ZM12 4.75C15.4518 4.75 18.25 7.54822 18.25 11H19.75C19.75 6.71979 16.2802 3.25 12 3.25V4.75ZM5.75 11C5.75 7.54822 8.54822 4.75 12 4.75V3.25C7.71979 3.25 4.25 6.71979 4.25 11H5.75ZM11.9473 19.1382C11.2395 18.7711 9.66527 17.8664 8.27749 16.4666C6.88902 15.0661 5.75 13.2364 5.75 11H4.25C4.25 13.78 5.67049 15.9676 7.21227 17.5227C8.75474 19.0785 10.4815 20.0677 11.2566 20.4697L11.9473 19.1382ZM12.0527 19.1382C12.0164 19.157 11.9836 19.157 11.9473 19.1382L11.2566 20.4697C11.726 20.7132 12.274 20.7132 12.7434 20.4697L12.0527 19.1382ZM14.25 11C14.25 12.2426 13.2426 13.25 12 13.25V14.75C14.0711 14.75 15.75 13.0711 15.75 11H14.25ZM12 8.75C13.2426 8.75 14.25 9.75736 14.25 11H15.75C15.75 8.92893 14.0711 7.25 12 7.25V8.75ZM9.75 11C9.75 9.75736 10.7574 8.75 12 8.75V7.25C9.92893 7.25 8.25 8.92893 8.25 11H9.75ZM12 13.25C10.7574 13.25 9.75 12.2426 9.75 11H8.25C8.25 13.0711 9.92893 14.75 12 14.75V13.25Z"
+                    fill="black" />
+                </svg>
+              </div>
+              <span class="City-name bodyM">Нижний Новгород</span>
+            </div>
+            <div class="call">
+              <a href="tel:88005509380" class="tlephone">8 800 550 93 80</a>
+              <button class="buyCall buttonS">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container">
+          <div class="header__bottom_inner">
+            <a href="#" class="logo">
+              <img src="./IMG/icon/Logo.svg" alt="Zigura Logo">
+            </a>
+            <nav class="nav">
+              <ul class="nav__item">
+                <a href="#">Диваны прямые</a>
+              </ul>
+              <ul class="nav__item">
+                <a href="#">Диваны угловые</a>
+              </ul>
+              <ul class="nav__item">
+                <a href="#">Матрасы</a>
+              </ul>
+              <ul class="nav__item">
+                <a href="#">Кровати</a>
+              </ul>
+              <ul class="nav__item">
+                <a href="#">Портфолио</a>
+              </ul>
+              <ul class="nav__item">
+                <a href="#">О компании</a>
+              </ul>
+            </nav>
+            <div class="SearchPacket">
+              <button>
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="14.667" cy="14.6667" r="8" stroke="black" stroke-width="1.5" />
+                  <path d="M26.667 26.6667L22.667 22.6667" stroke="black" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+              </button>
+              <button>
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M10.667 14.6667L10.667 9.33332C10.667 6.38781 13.0548 3.99999 16.0003 3.99999V3.99999C18.9458 3.99999 21.3337 6.38781 21.3337 9.33332L21.3337 14.6667"
+                    stroke="black" stroke-width="1.5" stroke-linecap="round" />
+                  <path
+                    d="M5.02768 15.6678C5.17276 13.9269 5.24529 13.0565 5.81938 12.5282C6.39347 12 7.26693 12 9.01386 12L22.9861 12C24.7331 12 25.6065 12 26.1806 12.5282C26.7547 13.0565 26.8272 13.9269 26.9723 15.6678L27.8195 25.8339C27.904 26.8474 27.9462 27.3542 27.6491 27.6771C27.352 28 26.8435 28 25.8264 28L6.1736 28C5.15655 28 4.64802 28 4.35092 27.6771C4.05382 27.3542 4.09605 26.8474 4.18051 25.8339L5.02768 15.6678Z"
+                    stroke="black" stroke-width="1.5" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <h1 class="hero__title headlineH1">Новая коллекция кроватей</h1>
+          <button class="Sbutton M hero__button">Подробнее</button>
+        </div>
+        <div class="swiper-container swiper-no-swiping">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide item1">
+            </div>
+            <div class="swiper-slide item1"></div>
+            <div class="swiper-slide item1"></div>
+          </div>
+        </div>
+        <div class="swiper-pagination">
+        </div>
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </section>
+
+    <section class="categorize">
+      <div class="container">
+        <div class="title__inner">
+          <h2 class="categorize__title headlineH2">Категории</h2>
+          <button class="Sbutton M">
+            Перейти в каталог
+          </button>
+        </div>
+        <div class="grid__categori">
+          <div class="divans item">
+            Диваны прямые <span>47 товаров</span>
+          </div>
+          <div class="matras item">
+            Матрасы <span>17 товаров</span>
+          </div>
+          <div class="krovat item">
+            Кровати <span>17 товаров</span>
+          </div>
+          <div class="divans_angle item">
+            Диваны угловые <span>27 товаров</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="popular">
+      <div class="container">
+        <div class="popular__title_inner">
+          <h2 class="section__title headlineH2">Популярные товары</h2>
+          <div class="sectionBTN">
+            <button class="prev btn-arrow">
+              <svg width="20" height="21" viewBox="0 0 20 21" fill="none">
+                <path d="M12.0998 5.69995L7.29981 10.5L12.0998 15.3" stroke="#3F3D3F" stroke-width="2" />
+              </svg>
+            </button>
+            <button class="next btn-arrow">
+              <svg width="20" height="21" viewBox="0 0 20 21" fill="none">
+                <path d="M7.9002 15.3L12.7002 10.5L7.9002 5.70005" stroke="#3F3D3F" stroke-width="2" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="swiper-container-popular swiper-no-swiping">
+          <div class="swiper-wrapper">
+            <a href="#" class="swiper-slide item1">
+              <div class="popular__item">
+                <img src="IMG/bigImg/popular/item1.jpg" alt="" class="item__picture">
+              </div>
+              <div class="popular__item_title sublineH2">
+                Нордик
+                <span>Угловой диван-книжка</span>
+              </div>
+              <span class="popular__item_price">65 800 ₽</span>
+              <div class="popular__item_circle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10.5" cy="10" r="10" fill="#F4ECE6" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="10" fill="#C18B81" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="6" fill="#52726F" />
+                  <circle cx="10" cy="10" r="9.5" stroke="#52726F" />
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="swiper-slide item1">
+              <div class="popular__item">
+                <img src="IMG/bigImg/popular/item2.jpg" alt="" class="item__picture">
+              </div>
+              <div class="popular__item_title sublineH2">
+                Нордик
+                <span>Кровать</span>
+              </div>
+              <span class="popular__item_price">65 800 ₽</span>
+              <div class="popular__item_circle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10.5" cy="10" r="10" fill="#F4ECE6" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="10" fill="#C18B81" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="6" fill="#DEAD46" />
+                  <circle cx="10" cy="10" r="9.5" stroke="#DEAD46" />
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="swiper-slide item1">
+              <div class="popular__item">
+                <img src="IMG/bigImg/popular/item3.jpg" alt="" class="item__picture">
+              </div>
+              <div class="popular__item_title sublineH2">
+                Хюгге
+                <span>Прямой выкатной диван-книжка</span>
+              </div>
+              <span class="popular__item_price">65 800 ₽</span>
+              <div class="popular__item_circle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10.5" cy="10" r="10" fill="#F4ECE6" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="10" fill="#C18B81" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="6" fill="#798B99" />
+                  <circle cx="10" cy="10" r="9.5" stroke="#798B99" />
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="swiper-slide item1">
+              <div class="popular__item">
+                <img src="IMG/bigImg/popular/item4.jpg" alt="" class="item__picture">
+              </div>
+              <div class="popular__item_title sublineH2">
+                Бьорк
+                <span>Угловой диван тик-так</span>
+              </div>
+              <span class="popular__item_price">65 800 ₽</span>
+              <div class="popular__item_circle circle4">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10.5" cy="10" r="10" fill="#F4ECE6" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="10" fill="#D6D6D6" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="10" fill="#914D1C" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="6" fill="#064383" />
+                  <circle cx="10" cy="10" r="9.5" stroke="#064383" />
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="swiper-slide item1">
+              <div class="popular__item">
+                <img src="IMG/bigImg/popular/item5.jpg" alt="" class="item__picture">
+              </div>
+              <div class="popular__item_title sublineH2">
+                Нордик
+                <span>Кровать</span>
+              </div>
+              <span class="popular__item_price">65 800 ₽</span>
+              <div class="popular__item_circle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10.5" cy="10" r="10" fill="#F4ECE6" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="10" fill="#E0C0BA" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="6" fill="#8B5247" />
+                  <circle cx="10" cy="10" r="9.5" stroke="#8B5247" />
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="swiper-slide item1">
+              <div class="popular__item">
+                <img src="IMG/bigImg/popular/item1.jpg" alt="" class="item__picture">
+              </div>
+              <div class="popular__item_title sublineH2">
+                Нордик
+                <span>Угловой диван-книжка</span>
+              </div>
+              <span class="popular__item_price">65 800 ₽</span>
+              <div class="popular__item_circle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10.5" cy="10" r="10" fill="#F4ECE6" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="10" fill="#C18B81" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="6" fill="#52726F" />
+                  <circle cx="10" cy="10" r="9.5" stroke="#52726F" />
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="swiper-slide item1">
+              <div class="popular__item">
+                <img src="IMG/bigImg/popular/item2.jpg" alt="" class="item__picture">
+              </div>
+              <div class="popular__item_title sublineH2">
+                Нордик
+                <span>Кровать</span>
+              </div>
+              <span class="popular__item_price">65 800 ₽</span>
+              <div class="popular__item_circle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10.5" cy="10" r="10" fill="#F4ECE6" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="10" fill="#C18B81" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="6" fill="#DEAD46" />
+                  <circle cx="10" cy="10" r="9.5" stroke="#DEAD46" />
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="swiper-slide item1">
+              <div class="popular__item">
+                <img src="IMG/bigImg/popular/item3.jpg" alt="" class="item__picture">
+              </div>
+              <div class="popular__item_title sublineH2">
+                Хюгге
+                <span>Прямой выкатной диван-книжка</span>
+              </div>
+              <span class="popular__item_price">65 800 ₽</span>
+              <div class="popular__item_circle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10.5" cy="10" r="10" fill="#F4ECE6" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="10" fill="#C18B81" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="6" fill="#798B99" />
+                  <circle cx="10" cy="10" r="9.5" stroke="#798B99" />
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="swiper-slide item1">
+              <div class="popular__item">
+                <img src="IMG/bigImg/popular/item4.jpg" alt="" class="item__picture">
+              </div>
+              <div class="popular__item_title sublineH2">
+                Бьорк
+                <span>Угловой диван тик-так</span>
+              </div>
+              <span class="popular__item_price">65 800 ₽</span>
+              <div class="popular__item_circle circle4">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10.5" cy="10" r="10" fill="#F4ECE6" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="10" fill="#D6D6D6" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="10" fill="#914D1C" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="6" fill="#064383" />
+                  <circle cx="10" cy="10" r="9.5" stroke="#064383" />
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="swiper-slide item1">
+              <div class="popular__item">
+                <img src="IMG/bigImg/popular/item5.jpg" alt="" class="item__picture">
+              </div>
+              <div class="popular__item_title sublineH2">
+                Нордик
+                <span>Кровать</span>
+              </div>
+              <span class="popular__item_price">65 800 ₽</span>
+              <div class="popular__item_circle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10.5" cy="10" r="10" fill="#F4ECE6" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="10" fill="#E0C0BA" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="6" fill="#8B5247" />
+                  <circle cx="10" cy="10" r="9.5" stroke="#8B5247" />
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="swiper-slide item1">
+              <div class="popular__item">
+                <img src="IMG/bigImg/popular/item1.jpg" alt="" class="item__picture">
+              </div>
+              <div class="popular__item_title sublineH2">
+                Нордик
+                <span>Угловой диван-книжка</span>
+              </div>
+              <span class="popular__item_price">65 800 ₽</span>
+              <div class="popular__item_circle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10.5" cy="10" r="10" fill="#F4ECE6" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="10" fill="#C18B81" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="6" fill="#52726F" />
+                  <circle cx="10" cy="10" r="9.5" stroke="#52726F" />
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="swiper-slide item1">
+              <div class="popular__item">
+                <img src="IMG/bigImg/popular/item3.jpg" alt="" class="item__picture">
+              </div>
+              <div class="popular__item_title sublineH2">
+                Хюгге
+                <span>Прямой выкатной диван-книжка</span>
+              </div>
+              <span class="popular__item_price">65 800 ₽</span>
+              <div class="popular__item_circle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10.5" cy="10" r="10" fill="#F4ECE6" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="10" fill="#C18B81" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="6" fill="#798B99" />
+                  <circle cx="10" cy="10" r="9.5" stroke="#798B99" />
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="swiper-slide item1">
+              <div class="popular__item">
+                <img src="IMG/bigImg/popular/item2.jpg" alt="" class="item__picture">
+              </div>
+              <div class="popular__item_title sublineH2">
+                Нордик
+                <span>Кровать</span>
+              </div>
+              <span class="popular__item_price">65 800 ₽</span>
+              <div class="popular__item_circle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10.5" cy="10" r="10" fill="#F4ECE6" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="10" fill="#C18B81" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="6" fill="#DEAD46" />
+                  <circle cx="10" cy="10" r="9.5" stroke="#DEAD46" />
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="swiper-slide item1">
+              <div class="popular__item">
+                <img src="IMG/bigImg/popular/item1.jpg" alt="" class="item__picture">
+              </div>
+              <div class="popular__item_title sublineH2">
+                Нордик
+                <span>Угловой диван-книжка</span>
+              </div>
+              <span class="popular__item_price">65 800 ₽</span>
+              <div class="popular__item_circle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10.5" cy="10" r="10" fill="#F4ECE6" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="10" fill="#C18B81" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="6" fill="#52726F" />
+                  <circle cx="10" cy="10" r="9.5" stroke="#52726F" />
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="swiper-slide item1">
+              <div class="popular__item">
+                <img src="IMG/bigImg/popular/item4.jpg" alt="" class="item__picture">
+              </div>
+              <div class="popular__item_title sublineH2">
+                Бьорк
+                <span>Угловой диван тик-так</span>
+              </div>
+              <span class="popular__item_price">65 800 ₽</span>
+              <div class="popular__item_circle circle4">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10.5" cy="10" r="10" fill="#F4ECE6" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="10" fill="#D6D6D6" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="10" fill="#914D1C" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="6" fill="#064383" />
+                  <circle cx="10" cy="10" r="9.5" stroke="#064383" />
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="swiper-slide item1">
+              <div class="popular__item">
+                <img src="IMG/bigImg/popular/item1.jpg" alt="" class="item__picture">
+              </div>
+              <div class="popular__item_title sublineH2">
+                Нордик
+                <span>Угловой диван-книжка</span>
+              </div>
+              <span class="popular__item_price">65 800 ₽</span>
+              <div class="popular__item_circle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10.5" cy="10" r="10" fill="#F4ECE6" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="10" fill="#C18B81" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="6" fill="#52726F" />
+                  <circle cx="10" cy="10" r="9.5" stroke="#52726F" />
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="swiper-slide item1">
+              <div class="popular__item">
+                <img src="IMG/bigImg/popular/item1.jpg" alt="" class="item__picture">
+              </div>
+              <div class="popular__item_title sublineH2">
+                Нордик
+                <span>Угловой диван-книжка</span>
+              </div>
+              <span class="popular__item_price">65 800 ₽</span>
+              <div class="popular__item_circle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10.5" cy="10" r="10" fill="#F4ECE6" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="10" fill="#C18B81" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="6" fill="#52726F" />
+                  <circle cx="10" cy="10" r="9.5" stroke="#52726F" />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-scrollbar-popular"></div>
+      </div>
+    </section>
+    <section class="project">
+      <div class="container">
+        <div class="popular__title_inner">
+          <h2 class="section__title headlineH2">Проекты с мебелью ZIGURA</h2>
+          <div class="sectionBTN">
+            <button class="prev-proj btn-arrow">
+              <svg width="20" height="21" viewBox="0 0 20 21" fill="none">
+                <path d="M12.0998 5.69995L7.29981 10.5L12.0998 15.3" stroke="#3F3D3F" stroke-width="2" />
+              </svg>
+            </button>
+            <button class="next-proj btn-arrow">
+              <svg width="20" height="21" viewBox="0 0 20 21" fill="none">
+                <path d="M7.9002 15.3L12.7002 10.5L7.9002 5.70005" stroke="#3F3D3F" stroke-width="2" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="swiper-container-proj swiper-no-swiping">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide item-proj item-proj-1">
+              <h4 class="headlineH4 item__title">Отель Palazzo</h4>
+            </div>
+            <div class="swiper-slide item-proj item-proj-2">
+              <h4 class="headlineH4 item__title">Отель Great Eight</h4>
+            </div>
+            <div class="swiper-slide item-proj item-proj-3">
+              <h4 class="headlineH4 item__title">Отель Лазурный берег</h4>
+            </div>
+            <div class="swiper-slide item-proj item-proj-1">
+              <h4 class="headlineH4 item__title">Отель Palazzo</h4>
+            </div>
+            <div class="swiper-slide item-proj item-proj-2">
+              <h4 class="headlineH4 item__title">Отель Great Eight</h4>
+            </div>
+            <div class="swiper-slide item-proj item-proj-3">
+              <h4 class="headlineH4 item__title">Отель Лазурный берег</h4>
+            </div>
+            <div class="swiper-slide item-proj item-proj-1">
+              <h4 class="headlineH4 item__title">Отель Palazzo</h4>
+            </div>
+            <div class="swiper-slide item-proj item-proj-2">
+              <h4 class="headlineH4 item__title">Отель Great Eight</h4>
+            </div>
+            <div class="swiper-slide item-proj item-proj-3">
+              <h4 class="headlineH4 item__title">Отель Лазурный берег</h4>
+            </div>
+            <div class="swiper-slide item-proj item-proj-1">
+              <h4 class="headlineH4 item__title">Отель Palazzo</h4>
+            </div>
+            <div class="swiper-slide item-proj item-proj-2">
+              <h4 class="headlineH4 item__title">Отель Great Eight</h4>
+            </div>
+            <div class="swiper-slide item-proj item-proj-3">
+              <h4 class="headlineH4 item__title">Отель Лазурный берег</h4>
+            </div>
+
+          </div>
+        </div>
+        <div class="swiper-scrollbar-proj"></div>
+      </div>
+    </section>
+    <section class="production">
+      <div class="container">
+        <div class="production__left">
+          <div class="production__left_title headlineH2">Собственное производство мебели
+          </div>
+          <button class="Sbutton M">Подробнее о компании
+            <svg width="15" height="14" viewBox="0 0 15 14" fill="none">
+              <path d="M8.5 2L13.5 7M13.5 7L8.5 12M13.5 7H1" stroke="#39333D" stroke-width="2"
+                stroke-linecap="square" />
+            </svg>
+          </button>
+          <div class="production__left_img">
+          </div>
+        </div>
+        <div class="production__middle">
+          <h4 class="production__middle_title overlineH4">Концепция
+            комфортной жизни</h4>
+          <div class="production__middle_img">
+          </div>
+          <p class="production__middle_parag bodyM">
+            Мы делаем мебель для отелей и гостиниц с 2014 года. И делаем это больше, чем просто хорошо. За это время мы
+            реализовали около 1000 проектов по всей России, и каждый из них говорит о нашем подходе к делу,
+            профессионализме и щепетильности.
+          </p>
+        </div>
+        <div class="production__right">
+          <div class="production__right_img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="leftColumn">
+            <a href="#" class="logo">
+              <img src="IMG/icon/Logo.svg" alt="Zigura" class="logotype">
+            </a>
+            <h2 class="headlineH2">принимаем к оплате</h2>
+            <div class="imgPay">
+              <div class="Pay__card"><img src="IMG/Pay/Mir.jpg" alt=""></div>
+              <div class="Pay__card"><img src="IMG/Pay/Visa.jpg" alt=""></div>
+              <div class="Pay__card"><img src="IMG/Pay/yandex.jpg" alt=""></div>
+              <div class="Pay__card"><img src="IMG/Pay/qiwi.jpg" alt=""></div>
+              <div class="Pay__card"><img src="IMG/Pay/masterCard.jpg" alt=""></div>
+            </div>
+          </div>
+          <nav class="leftMiddleColumn">
+            <h2 class="headlineH2">Каталог</h2>
+            <ul class="nav-item bodyM">
+              <a href="#">Диваны прямые</a>
+            </ul>
+            <ul class="nav-item bodyM">
+              <a href="#">Диваны угловые</a>
+            </ul>
+            <ul class="nav-item bodyM">
+              <a href="#">Матрасы</a>
+            </ul>
+            <ul class="nav-item bodyM">
+              <a href="#">Кровати</a>
+            </ul>
+          </nav>
+          <nav class="RightMiddleColumn">
+            <h2 class="headlineH2">О компании</h2>
+            <ul class="nav-item bodyM">
+              <a href="#">Портфолио</a>
+            </ul>
+            <ul class="nav-item bodyM">
+              <a href="#">О нас</a>
+            </ul>
+          </nav>
+          <div class="rightColumn">
+            <a href="tel:88005509380" class="tel">8 800 550 93 80</a>
+            <div class="email headlineH2">VadimVoroninR@gmail.com</div>
+            <div class="connectUs bodyM">Свяжитесь с нами:</div>
+            <div class="footer__socSeti_inner">
+              <a href="#">
+                <div class="socSeti"><img src="IMG/Massanjers/WhatsUp.jpg" alt=""></div>
+              </a>
+              <a href="#">
+                <div class="socSeti"><img src="IMG/Massanjers/telegram.jpg" alt=""></div>
+              </a>
+              <a href="#">
+                <div class="socSeti"><img src="IMG/Massanjers/Viber.jpg" alt=""></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__line">
+        <div class="container">
+          <div class="footer__down_inner">
+            <span class="coopyright">Copyright © 2023 Все права защищены.</span>
+            <div class="down_polit">
+              <a href="#" class="polit">Политика конфиденциальности</a>
+              <div class="downLine"></div>
+              <a href="#" class="soglas">Пользовательское соглашение</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </footer>
+  </div>
+
+
+  <script src="./JS/swiper-bundle.js"></script>
+  <script src="./JS/main.js"></script>
+</body>
+
+</html>

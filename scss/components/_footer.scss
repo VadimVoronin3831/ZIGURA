@@ -1,0 +1,88 @@
+.footer{
+  background: var(--foundation-purple-light);
+  &__inner{
+    padding: 48px 0px 64px;
+    .headlineH2{
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+    @include flex-sb;
+    .leftColumn{
+      .headlineH2{
+        margin-bottom: 16px;
+      }
+      .imgPay{
+        @include flex-all-sb;
+        width: 353px;
+      }
+      .Pay__card{
+        border-radius: 10px;
+        height: 39px;
+        width: 61px;
+        @include flex-all-center;
+        background-color: var(--color-white);
+      }
+      .logo{
+        display: block;
+        margin-bottom: 82px;
+      }
+    }
+    .leftMiddleColumn, .RightMiddleColumn{
+      .headlineH2{
+        margin-bottom: 32px;
+      }
+      .nav-item:not(:last-child){
+        margin-bottom: 20px;
+      }
+    }
+    .rightColumn{
+      .tel{
+        display: block;
+        font-family: "Roboto";
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 24px;
+      }
+      .email{
+        font-size: 16px;
+        text-transform: none;
+        line-height: 19px;
+        margin-bottom: 50px;
+      }
+      .connectUs{
+        display: block;
+        margin-bottom: 16px;
+      }
+      .footer__socSeti_inner{
+        @include flex-all-sb;
+        width: 152px;
+        a{
+          @include transition;
+        }
+        a:hover{
+          transform: scale(1.1);
+        }
+      }
+      .socSeti{
+        border-radius: 50%;
+      }
+    }
+  }
+  .footer__line{
+    border-top: 1px solid var(--foundation-violet-light-hover);
+    .footer__down_inner{
+      @include flex-all-sb;
+      .down_polit{
+        padding: 16px 0;
+        @include flex-all-sb;
+        .downLine{
+          height: 20px;
+          margin: 0 23px;
+          width: 1px;
+          border-left: 1px solid var(--foundation-violet-light-active);
+        }
+      }
+    }
+  }
+}

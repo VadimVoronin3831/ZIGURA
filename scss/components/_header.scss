@@ -1,0 +1,54 @@
+.header__top {
+  padding: 10px 0;
+  background: var(--foundation-purple-light );
+  &_inner {
+    @include flex-all-sb;
+  }
+  .City {
+    white-space: nowrap;
+    .pointSVG {
+      margin-right: 8px;
+    }
+    @include flex-v-center;
+  }
+  a {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    margin-right: 30px;
+  }
+  button {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 110%;
+    text-decoration: underline;
+    color: var(--violet-normal);
+  }
+}
+
+.nav__item a{
+  transition: all .2s;
+}
+.header__bottom{
+  .logo{
+    min-width: 210px;
+  }
+  padding: 20px 0;
+  &_inner{
+    @include flex-all-sb;
+  }
+  nav{
+    @include flex-all-sb;
+    font-weight: 600;
+    .nav__item a:hover{
+      color: var(--violet-active);
+    }
+  }
+  .nav__item:not(:last-child){
+    margin-right: 40px;
+  }
+  .SearchPacket button:first-child{
+    margin-right: 24px;
+  }
+}

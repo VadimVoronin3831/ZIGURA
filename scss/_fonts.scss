@@ -1,0 +1,19 @@
+@import "./mixin/font-face";
+
+@include font-face("Circle", "../Fonts/CirceBold-Bold", 700, normal);
+@include font-face("HeliosC", "../Fonts/HeliosC-Bold", 700, normal);
+@include font-face("Inter", "../Fonts/Inter-Medium", 500, normal);
+@include font-face("Inter", "../Fonts/Inter-Regular", 400, normal);
+@include font-face("Inter", "../Fonts/Inter-SemiBold", 600, normal);
+@include font-face("PFBagueSansPro", "../Fonts/PFBagueSansPro", 400, normal);
+@include font-face("Raleway", "../Fonts/Raleway-Bold", 700, normal);
+@include font-face("Raleway", "../Fonts/Raleway-Light", 300, normal);
+@include font-face("Raleway", "../Fonts/Raleway-Regular", 400, normal);
+@include font-face("Raleway", "../Fonts/Raleway-SemiBold", 600, normal);
+@include font-face("RFTone", "../Fonts/RFTone-Bold", 700, normal);
+@include font-face("Roboto", "../Fonts/Roboto-Bold", 700, normal);
+@include font-face("Roboto", "../Fonts/Roboto-Medium", 500, normal);
+@include font-face("Roboto", "../Fonts/Roboto-Regular", 400, normal);
+@include font-face("Roboto", "../Fonts/Roboto-Bold", 700, normal);
+@include font-face("SegoeUI", "../Fonts/SegoeUI-SemiBold", 600, normal);
+@include font-face("SegoeUI", "../Fonts/SegoeUI", 600, normal);
