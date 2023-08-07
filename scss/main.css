@@ -1216,9 +1216,14 @@ a:hover {
 .project .item-proj {
   display: flex;
   align-items: end;
-  height: 410px;
+  height: 540px;
   border-radius: 6px;
   transition: all 0.2s;
+}
+@media (max-width: 770px) {
+  .project .item-proj {
+    height: 410px;
+  }
 }
 .project .swiper-slide:hover {
   transform: scale(0.99);
