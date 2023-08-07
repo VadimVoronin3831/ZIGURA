@@ -26,29 +26,55 @@
     color: var(--violet-normal);
   }
 }
-
+.burger{
+  display: none;
+  position: fixed;
+  @include desctop770{
+    display: block;
+  }
+}
 .nav__item a{
   transition: all .2s;
 }
 .header__bottom{
   .logo{
-    min-width: 210px;
+    margin-right: 40px;  
+    width: 210px;
+    @include desctop1024{
+      width: 132px;
+      margin-right: 29px;  
+    }
+    img{
+      @include desctop1024{
+      }
+    }
   }
   padding: 20px 0;
   &_inner{
     @include flex-all-sb;
   }
   nav{
+    @include desctop770{
+      display: none;
+    }
     @include flex-all-sb;
     font-weight: 600;
-    .nav__item a:hover{
-      color: var(--violet-active);
+    .nav__item:hover{
+      color: var(--violet---foundation-violet-light-active);
     }
   }
   .nav__item:not(:last-child){
+    @include desctop1024{
+      margin-right: 20px;
+    }
     margin-right: 40px;
   }
   .SearchPacket button:first-child{
     margin-right: 24px;
+  }
+  .SearchPacket {
+    @include desctop770{
+      margin-right: 64px;
+    }
   }
 }

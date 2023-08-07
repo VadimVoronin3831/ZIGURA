@@ -8,6 +8,12 @@
     grid-template-rows: repeat(2, 1fr);
     gap: 30px;
     height: 550px;
+    @include desctop1024{
+      height: 525px;
+    }
+    @include desctop770{
+      height: 384px;
+    }
     .divans {
       grid-column: 2 span;
       grid-row: 2 span;
@@ -17,14 +23,32 @@
     }
     .divans::after {
       content: "";
+      @include desctop1280{
+        width: 516px;
+        height: 281px;
+        top: 65px;
+        left: 0px;
+      }
       position: absolute;
       width: 735px;
       height: 400px;
-      background: url("..//IMG/bigImg/categorize/item1.png"), 50% / cover no-repeat;
+      background: url("..//IMG/bigImg/categorize/item1.png"), 50%/ cover no-repeat;
       top: 55px;
       left: 27px;
     }
     .matras::after {
+      @include desctop1280{
+        width: 516px;
+        height: 281px;
+        top: 65px;
+        left: 0px;
+      }
+      @include desctop770{
+        width: 151px;
+        height: 100px;
+        top: 40px;
+        right: 0;
+      }
       content: "";
       position: absolute;
       width: 281px;
@@ -34,6 +58,18 @@
       left: 97px;
     }
     .krovat::after {
+      @include desctop1280{
+        width: 516px;
+        height: 281px;
+        top: 65px;
+        left: 0px;
+      }
+      @include desctop770{
+        width: 175px;
+        height: 97px;
+        top: 40px;
+        right: 0;
+      }
       content: "";
       position: absolute;
       width: 326px;
@@ -43,6 +79,18 @@
       left: 41px;
     }
     .divans_angle::after {
+      @include desctop1280{
+        width: 516px;
+        height: 281px;
+        top: 65px;
+        left: 0px;
+      }
+      @include desctop770{
+        width: 270px;
+        height: 121px;
+                top: 20px;
+                left: 70px;
+      }
       content: "";
       position: absolute;
       width: 508px;
@@ -52,6 +100,7 @@
       left: 268px;
     }
     .item {
+      border-radius: 16px;
       transition: .2s;
       overflow: hidden;
       position: relative;

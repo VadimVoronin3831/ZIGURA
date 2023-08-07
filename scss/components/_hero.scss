@@ -1,71 +1,92 @@
-
-.hero{
-  .hero__title{
+.hero {
+  .hero__title {
     color: var(--color-white);
   }
-  .container{
+  .container {
     position: relative;
+  }
+  @include desctop1024 {
+    margin-bottom: 80px;
   }
   margin-bottom: 100px;
 }
-.hero__button{
+.hero__button {
   color: var(--color-white);
   border-color: var(--color-white);
 }
-.hero__button:hover{
+.hero__button:hover {
   border-color: var(--foundation-violet-normal);
 }
-.hero__content{
+.hero__content {
   width: 550px;
-  .hero__title{
+  .hero__title {
     margin-bottom: 40px;
     margin-top: 0;
   }
   position: absolute;
+  @include desctop1024 {
+    top: 48px;
+  }
   top: 100px;
   left: 100px;
   z-index: 10;
 }
-.swiper-pagination-current{
-color: var(--color-white);
+.swiper-pagination-current {
+  color: var(--color-white);
 }
-.swiper-pagination-fraction{
+.swiper-pagination-fraction {
   color: var(--foundation-violet-light-active) !important;
 }
-.swiper-pagination{
-  .swiper-pagination-total{
+.swiper-pagination {
+  .swiper-pagination-total {
     color: var(--foundation-violet-light-active);
   }
   text-align: left !important;
   padding: 0 15px;
   padding-left: 100px;
-margin-bottom: 83px;
-bottom: 0 !important;
-font-size: 18px;
-font-family: "Roboto";
-font-style: normal;
-font-weight: 400;
-line-height: 27px;
+  @include desctop1024 {
+    margin-bottom: 51px;
+  }
+  @include desctop1280 {
+    margin-bottom: 59px;
+  }
+  margin-bottom: 83px;
+  bottom: 0 !important;
+  font-size: 18px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
 }
-.swiper-scrollbar{
+.swiper-scrollbar {
+  @include desctop1280 {
+    bottom: 40px !important;
+  }
   bottom: 64px !important;
   left: 100px !important;
   max-width: 140px;
   height: 3px;
   background: var(--foundation-violet-light-active) !important;
-  &-drag{
+  &-drag {
     background: var(--color-white) !important;
   }
 }
 
-.swiper-container{
+.swiper-container {
   overflow: hidden;
-  .swiper-wrapper{
+  .swiper-wrapper {
     .item1 {
-      min-width: 100%;min-height: 550px;
+      min-width: 100%;
+      min-height: 550px;
       background: url("../IMG/bigImg/HeroImg.jpg") no-repeat;
       background-size: cover;
       border-radius: 16px;
+      @include desctop1280 {
+        min-height: 424px;
+      }
+      @include desctop1024 {
+        min-height: 371px;
+      }
     }
   }
 }

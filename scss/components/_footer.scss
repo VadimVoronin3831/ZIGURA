@@ -1,5 +1,9 @@
 .footer{
   background: var(--foundation-purple-light);
+  .logo{
+    display: block;
+    margin-bottom: 82px;
+  }
   &__inner{
     padding: 48px 0px 64px;
     .headlineH2{
@@ -8,6 +12,12 @@
     }
     @include flex-sb;
     .leftColumn{
+      position: absolute;
+      @include desctop1280{
+        top: 200px;
+      }
+      top: 160px;
+      left: 15px;
       .headlineH2{
         margin-bottom: 16px;
       }
@@ -22,10 +32,7 @@
         @include flex-all-center;
         background-color: var(--color-white);
       }
-      .logo{
-        display: block;
-        margin-bottom: 82px;
-      }
+
     }
     .leftMiddleColumn, .RightMiddleColumn{
       .headlineH2{

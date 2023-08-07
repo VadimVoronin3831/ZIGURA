@@ -5,6 +5,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
@@ -33,7 +34,7 @@ ul {
 }
 .for-mobile {
   display: none;
-  @include mobile {
+  @include desctop1024 {
     display: block;
   }
 }
@@ -47,9 +48,13 @@ button {
   padding: 0;
 }
 .container {
+  position: relative;
   max-width: 1430px;
   padding: 0 15px;
   margin: 0 auto;
+  @include desctop1280{
+    max-width: 1080px;
+  }
 }
 
 h1,

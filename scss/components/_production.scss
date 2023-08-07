@@ -5,6 +5,10 @@
   }
   &__left {
     &_img {
+      @include desctop1280 {
+        width: 249px;
+        min-height: 254px;
+      }
       width: 358px;
       min-height: 366px;
       border-radius: 16px;
@@ -12,55 +16,77 @@
       background-size: cover;
     }
     &_title {
+      @include desctop1280 {
+        width: 348px;
+      }
       margin-bottom: 32px;
       width: 376px;
     }
     button {
       margin-bottom: 70px;
-      svg{
+      svg {
         margin-left: 15px;
-        path{
+        path {
           @include transition;
         }
       }
     }
     button:hover {
-      svg{
-        path{
-          stroke: #FFF;
+      svg {
+        path {
+          stroke: #fff;
         }
       }
     }
   }
-    &__middle {
-      padding-top: 45px;
-      width: 626px;
-      &_title {
-        width: 161px;
-        margin: 0 0 44px auto;
-      }
-      &_img {
-        width: 626px;
-        min-height: 360px;
-        border-radius: 16px;
-        background: url("../IMG/bigImg/production/middle_img.jpg") no-repeat;
-        background-size: cover;
-      }
-      &_parag {
-        margin: 0;
-        margin-top: 30px;
-      }
+  &__middle {
+    padding-top: 45px;
+    @include desctop1280 {
+      width: 433px;
     }
-    &__right {
-      height: 100%;
-      @include flex-all-end;
-      &_img {
-        width: 238px;
-        height: 360px;
-        border-radius: 16px;
-        background: url("../IMG/bigImg/production/right_img.jpg") no-repeat;
-        background-size: cover;
+    @include desctop1024 {
+      width: 376px;
+    }
+    width: 626px;
+    &_title {
+      width: 161px;
+      margin: 0 0 44px auto;
+    }
+    &_img {
+      @include desctop1280 {
+        width: 433px;
+        min-height: 249px;
       }
+      @include desctop1024 {
+        width: 376px;
+      }
+      width: 626px;
+      min-height: 360px;
+      border-radius: 16px;
+      background: url("../IMG/bigImg/production/middle_img.jpg") no-repeat;
+      background-size: cover;
+    }
+    &_parag {
+      margin: 0;
+      margin-top: 30px;
     }
   }
-
+  &__right {
+    @include desctop1024 {
+      display: none;
+    }
+    height: 100%;
+    @include flex-all-end;
+    &_img {
+      @include desctop1024 {
+        width: 213px;
+        height: 310px;
+      }
+      width: 238px;
+      height: 360px;
+      border-radius: 16px;
+      background: url("../IMG/bigImg/production/right_img.jpg") no-repeat;
+      background-size: cover;
+    }
+  }
+}
